@@ -1,4 +1,5 @@
 #include "Matrix3D.h"
+#include "Vector3D.h"
 
 Matrix3D::Matrix3D(double x1, double x2, double x3, double x4, double x5, double x6, double x7, double x8, double x9) {
 	field[0] = x1;
@@ -90,4 +91,12 @@ std::istream& operator >> (std::istream& is, Matrix3D& m3) {
 	m3.setValue(3, 2, x8);
 	m3.setValue(3, 3, x9);
 	return is;
+}
+
+Vector3D operator*(const Vector3D& v3, const Matrix3D& m3) {
+	double x1, x2, x3;
+	x1 = v3.getX() * m3.field[0] + v3.getY() * m3.field[1] + v3.getZ() * m3.field[2];
+	x2 = v3.getX() * m3.field[3] + v3.getY() * m3.field[4] + v3.getZ() * m3.field[5];
+	x3 = v3.getX() * m3.field[6] + v3.getY() * m3.field[7] + v3.getZ() * m3.field[8];
+	return Vector3D(x1, x2, x3);
 }
