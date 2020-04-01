@@ -1,7 +1,6 @@
 #ifndef Vector3D_h
 #define Vector3D_h
 
-class Matrix3D;
 class Vector3D {
 private:
 	double x;
@@ -9,7 +8,6 @@ private:
 	double z;
 public:
 	friend Vector3D operator*(const int a, Vector3D& v3);
-	friend Vector3D operator*(const Vector3D& v3, const   Matrix3D& m3);
 	Vector3D(double x, double y, double z);
 	Vector3D();
 	~Vector3D();
