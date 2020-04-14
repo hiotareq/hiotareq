@@ -25,6 +25,6 @@ public:
 	double scalar_product(const Vector3D& v3) const;
 };
 std::istream& operator>>(std::istream& is, Vector3D& v3);
-Vector3D operator*(const int a, Vector3D& v3);
+Vector3D operator*(const int a, Vector3D& v3) const;
 std::ostream& operator<<(std::ostream& os, const Vector3D& v3);
 #endif 
