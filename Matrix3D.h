@@ -15,9 +15,9 @@ public:
 	Matrix3D(double x1, double x2, double x3, double x4, double x5, double x6, double x7, double x8, double x9);
 	~Matrix3D();
 
-	double getValue(int i, int j) const; /* здесь нужно вводить строку и столбец, привычные человеку ,а не компьютеру*/
-	void setValue(int i, int j, double value) /* здесь нужно вводить строку и столбец, привычные человеку ,а не компьютеру*/;
-	double det();
+	double getValue(int i, int j) const; /* Г§Г¤ДєЕ„Гј Г­ГіД‡Г­Г® ГўГўГ®Г¤ДЌЕ€Гј Е„Е€Д‘Г®Д™Гі ДЌ Е„Е€Г®Г«ГЎДєГ¶, ДЏД‘ДЌГўЕ±Г·Г­Е±Дє Г·ДєГ«Г®ГўДєД™Гі ,Е• Г­Дє Д™Г®Д›ДЏГјЕЈЕ€ДєД‘Гі*/
+	void setValue(int i, int j, double value) /* Г§Г¤ДєЕ„Гј Г­ГіД‡Г­Г® ГўГўГ®Г¤ДЌЕ€Гј Е„Е€Д‘Г®Д™Гі ДЌ Е„Е€Г®Г«ГЎДєГ¶, ДЏД‘ДЌГўЕ±Г·Г­Е±Дє Г·ДєГ«Г®ГўДєД™Гі ,Е• Г­Дє Д™Г®Д›ДЏГјЕЈЕ€ДєД‘Гі*/;
+	double det() const;
 
 	Matrix3D operator+(const Matrix3D& m3) const;
 	Matrix3D operator-(const Matrix3D& m3) const;
