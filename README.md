@@ -1,2 +1,2 @@
 # hiotareq
-Studying basics
+Studying basics C++
