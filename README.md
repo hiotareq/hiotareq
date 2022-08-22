@@ -1,1 +1,2 @@
 # hiotareq
+Studying basics
